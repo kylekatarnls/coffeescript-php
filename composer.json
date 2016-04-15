@@ -1,9 +1,9 @@
 {
-    "name": "coffeescript/coffeescript",
+    "name": "kylekatarnls/coffeescript",
     "type": "library",
-    "description": "A port of the CoffeeScript compiler to PHP.",
+    "description": "A port of the CoffeeScript compiler to PHP. (See http://github.com/alxlit/coffeescript-php, this is an exact fork to fix minimum stability on the last release)",
     "keywords": ["coffee", "coffeescript", "js", "javascript"],
-    "homepage": "http://github.com/alxlit/coffeescript-php",
+    "homepage": "http://github.com/kylekatarnls/coffeescript-php",
     "license": "MIT",
     "authors": [
         {
