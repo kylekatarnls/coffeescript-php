@@ -1094,7 +1094,7 @@ class Lexer
 
     if ($prev)
     {
-      if (in_array($prev[0], t((isset($prev['spaced']) && $prev['spaced']) ? 
+      if (in_array($prev[0], t((isset($prev['spaced']) && $prev['spaced']) ?
         self::$NOT_REGEX : self::$NOT_SPACED_REGEX)))
       {
         return 0;
@@ -1284,9 +1284,9 @@ class Lexer
 
   function tokenize()
   {
-    while ( ($this->chunk = substr($this->code, $this->index)) != FALSE )
+    while ( ($this->chunk = strval(substr($this->code, $this->index))) !== '' )
     {
-      $types = array('identifier', 'comment', 'whitespace', 'line', 'heredoc', 
+      $types = array('identifier', 'comment', 'whitespace', 'line', 'heredoc',
         'string', 'number', 'regex', 'js', 'literal');
 
       foreach ($types as $type)
